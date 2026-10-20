@@ -53,7 +53,7 @@ npm install
 ng serve
 ```
 
-The app runs at `http://localhost:4200`. Configure `src/environments/environment.ts` with the API URL and the Supabase URL and anonymous key.
+The app runs at `http://localhost:4200`. Before running, create `src/environments/environment.ts` from `environment.example.ts` (or run `node set-env.js` with `API_URL`, `SUPABASE_URL` and `SUPABASE_KEY` set). The file is gitignored.
 
 ## Deployment (Vercel)
 
@@ -85,5 +85,5 @@ SPA em Angular para gerenciar fichas de treino personalizadas, com autenticaçã
 - Regras de negócio concentradas no back-end; o front-end é só camada de apresentação.
 - Deploy na Vercel com geração do `environment.ts` em tempo de build e rewrites para a SPA.
 
-**Como executar:** `npm install`, configurar o `environment.ts` e rodar `ng serve`.
+**Como executar:** `npm install`, criar o `environment.ts` a partir do `environment.example.ts` (ele fica fora do Git) e rodar `ng serve`.
 </details>
